@@ -1,0 +1,132 @@
+.usernav-wrapper {
+  background-color: $accent-color;
+  min-height: 50px;
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.usernav {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: lighter;
+}
+
+.usernav,
+.pagenav {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-menu,
+.user-menu,
+.menu {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.user-menu {
+  margin-left: auto;
+  justify-content: space-between;
+  flex-basis: 427px;
+  flex-grow: 0;
+}
+
+.contacts-link,
+.usermenu-link {
+  text-decoration: none;
+  color: $contacts-link-color;
+}
+
+.usermenu-link {
+  padding: 20px 10px;
+}
+
+.usermenu-items:last-child > .usermenu-link {
+  padding-right: 0;
+}
+
+.contacts-items {
+  display: flex;
+  align-items: center;
+}
+
+.item1::before,
+.item2::before {
+  content: '';
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.item1::before {
+  width: 30px;
+  height: 27px;
+  background-image: url(../images/tel.png);
+}
+
+.item2::before {
+  width: 22px;
+  height: 14px;
+  background-image: url(../images/mail.png);
+}
+
+.item1 {
+  margin-right: 30px;
+}
+
+.link2 {
+  padding-left: 10px;
+}
+
+.logo {
+  margin: 0;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: $logo-content-title-color;
+}
+
+.logo::first-letter {
+  color: $accent-color;
+  font-weight: 900;
+}
+
+.menu {
+  margin-left: auto;
+  justify-content: space-between;
+  flex-basis: 465px;
+  flex-grow: 0;
+}
+
+.menu-items {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #0f0101;
+  padding: 12px 10px;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.menu-items:last-child > .menu-link {
+  padding-right: 0;
+}
+
+.pagenav {
+  margin-bottom: 31px;
+}

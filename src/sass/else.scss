@@ -1,0 +1,180 @@
+.fpcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 81px;
+}
+
+.fplist {
+  display: flex;
+  flex-basis: calc(100% / 4 - 90px / 4);
+  flex-grow: 0;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  background-color: #e9f0fd;
+  height: 322px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.only {
+  margin-bottom: 30px;
+}
+
+.fplist:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.fplist:nth-last-child(-n + 4) {
+  margin-bottom: 0px;
+}
+
+.nclist:hover > .nameprice > .prod-name,
+.fplist:hover > .nameprice > .prod-name {
+  background-color: $accent-color;
+}
+
+.nclist:hover > .nameprice > .prod-price,
+.fplist:hover > .nameprice > .prod-price {
+  background-color: #7fd9c7;
+}
+
+.featured-products {
+  margin-bottom: 100px;
+}
+
+.latest-news {
+  min-height: 848px;
+  background-color: #e9f0fd;
+}
+
+.lncontainer {
+  display: flex;
+  padding-bottom: 100px;
+}
+
+.lnitems {
+  flex-basis: calc(100% / 3 - 80px / 3);
+  flex-grow: 0;
+  margin-right: 40px;
+}
+
+.lnitems:last-child {
+  margin-right: 0;
+}
+
+.newstitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  color: $logo-content-title-color;
+  margin-top: 15px;
+  margin-bottom: 29px;
+
+  &::after {
+    content: '';
+    display: block;
+    background-image: url(../images/line2.png);
+    width: 136px;
+    height: 3px;
+    margin-top: 11px;
+  }
+}
+
+.newscontent {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: $logo-content-title-color;
+  margin-top: 0;
+  margin-bottom: 13px;
+}
+
+.rmbutton {
+  text-decoration: none;
+  display: inline-flex;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 50px;
+  background-color: #4ec6ab;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.newsletter {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1600px;
+  height: 462px;
+  background-image: url('../images/footer.png');
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.title3 {
+  padding-top: 100px;
+  margin-bottom: 27px;
+}
+
+.title3::after {
+  background-image: url(../images/line3.png);
+}
+
+.nlfollow {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.emailblock {
+  width: 540px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.input-mail {
+  display: block;
+  border: none;
+  border-radius: 5px;
+  width: 540px;
+  height: 60px;
+}
+
+.input-mail,
+.input-mail::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+  color: $logo-content-title-color;
+}
+
+.input-mail {
+  padding-left: 30px;
+}
+
+.nlbutton {
+  all: unset;
+  width: 89px;
+  height: 56px;
+  background-image: url('../images/arrow.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 449px;
+  top: 2.2px;
+  cursor: pointer;
+}

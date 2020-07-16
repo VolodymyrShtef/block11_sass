@@ -1,0 +1,22 @@
+.new-collection {
+  min-height: 676px;
+  background-color: #e9f0fd;
+  margin-bottom: 102px;
+}
+
+.nccontainer {
+  display: flex;
+  padding-bottom: 96px;
+}
+
+.nclist {
+  flex-basis: calc(100% / 4 - 90px / 4);
+  flex-grow: 0;
+  margin-right: 30px;
+  background-color: #fff;
+  height: 322px;
+}
+
+.nclist:last-child {
+  margin-right: 0px;
+}

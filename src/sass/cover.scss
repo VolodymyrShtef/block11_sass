@@ -1,0 +1,111 @@
+.image-wrapper {
+  position: relative;
+  width: 255px;
+  height: 282px;
+  overflow: hidden;
+  display: flex;
+}
+
+.cover {
+  position: absolute;
+  top: 282px;
+  left: 0;
+  width: 255px;
+  height: 282px;
+  background-color: black;
+  border: 10px solid white;
+  opacity: 0.549;
+  transition: top 300ms;
+}
+
+.button-block {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 166px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  opacity: 0;
+  transition: opacity 300ms 300ms;
+}
+
+.button-in-cover {
+  all: unset;
+  display: inline-block;
+  flex-basis: 50px;
+  flex-grow: 0;
+  height: 50px;
+  border: 1px solid #fff;
+  transition: background-color 250ms, border 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    border: none;
+  }
+}
+
+.icon-like {
+  background-image: url(../images/like.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-share {
+  background-image: url(../images/arrow1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-favorite {
+  background-image: url(../images/clock.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-cart {
+  flex-basis: 166px;
+  flex-grow: 0;
+  margin-top: 7px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.icon-cart::before {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 27px;
+  background-image: url(../images/cart.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-cart {
+  display: flex;
+  align-items: center;
+  padding-left: 13px;
+  background-color: #323232;
+}
+
+.add-to-cart {
+  padding-left: 20px;
+}
+
+.nclist:hover .image-wrapper > .cover,
+.fplist:hover .image-wrapper > .cover {
+  top: 0;
+}
+
+.nclist:hover .button-block,
+.fplist:hover .button-block {
+  opacity: 1;
+}

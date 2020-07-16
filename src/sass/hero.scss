@@ -1,0 +1,67 @@
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1600px;
+  height: 602px;
+  background-image: linear-gradient(rgba(0, 0, 2, 0.522), rgba(0, 0, 2, 0.522)),
+    url('../images/hero.png');
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.heroblock {
+  text-align: center;
+  position: absolute;
+  top: 205px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-title,
+.decor {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 48px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  margin: 0;
+  padding: 0;
+  color: #fffcfc;
+}
+
+.decor {
+  color: $accent-color;
+}
+
+.line1 {
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+
+.line2 {
+  font-weight: 600;
+  margin-bottom: 21px;
+}
+
+.linkwrapper {
+  width: 120px;
+  height: 42px;
+  background-color: $accent-color;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 13px;
+}
+
+.buynow {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.2px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 12px 25px;
+}
